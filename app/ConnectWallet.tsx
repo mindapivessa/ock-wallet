@@ -20,7 +20,7 @@ function WalletComponent() {
   return (
     <div className="flex justify-end">
       <Wallet>
-        <ConnectWallet>
+        <ConnectWallet className={cn("bg-lime-600")}>
           <Avatar />
           <Name />
         </ConnectWallet>
