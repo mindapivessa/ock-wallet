@@ -14,18 +14,18 @@ import {
   Identity,
   EthBalance,
 } from '@coinbase/onchainkit/identity';
-import { color } from '@coinbase/onchainkit/theme';
+import { color, cn, background, pressable, text } from '@coinbase/onchainkit/theme';
  
-function WalletDemo() {
+function WalletComponent() {
   return (
     <div className="flex justify-end">
       <Wallet>
         <ConnectWallet>
-          <Avatar className="h-6 w-6" />
+          <Avatar />
           <Name />
         </ConnectWallet>
         <WalletDropdown>
-          <Identity className="px-4 pt-3 pb-2" hasCopyAddressOnClick>
+          <Identity className={cn("px-4 pt-3 pb-2")} hasCopyAddressOnClick>
             <Avatar />
             <Name>
               <Badge />
@@ -43,4 +43,4 @@ function WalletDemo() {
   );
 }
 
-export default WalletDemo;
+export default WalletComponent;
