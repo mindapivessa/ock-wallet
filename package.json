@@ -9,13 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@coinbase/onchainkit": "^0.23.4",
+    "@coinbase/onchainkit": "^0.25.5",
+    "@coinbase/wallet-sdk": "^4.0.4",
     "@tanstack/react-query": "^5.48.0",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "viem": "^2.16.2",
-    "wagmi": "^2.10.7"
+    "viem": "^2.17.5",
+    "wagmi": "^2.11.2"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -26,5 +27,10 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "resolutions": {
+    "@coinbase/wallet-sdk": "npm:@lukasrosario/wallet-sdk@4.0.4-permissionedkeysalpha.4",
+    "wagmi": "npm:@lukasrosario/wagmi@2.11.1-permissionedkeysalpha.2",
+    "viem": "npm:@lukasrosario/viem@2.17.4-permissionedkeysalpha.2"
   }
 }
